@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  
+.sNav{
+ background-color: rgb(34, 42, 69);
+    padding: 1rem 1rem;
+    padding-left: .6rem;
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 0.4rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+h1{
+  font-size: 1.8rem;
+}
+.h1{
+  font-size: 1.5rem;
+}
+nav{
+  font-size: .9rem;
+}
+nav ul, h1{
+  padding-left: .6rem ;
+}
+nav ul{
+  padding-left: 1rem;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: .6rem 0;
+  line-height: 1.5;
+    text-transform: none;
+    white-space: normal;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.dm{
+  position: relative !important;
+  transform: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: white !important;
+   font-size: .8rem !important;
+   padding-left: .8rem;
+}
+.br{
+  font-size: .7rem;
+  color: rgb(197, 197, 194);
+}
+i{
+  padding-right: 1rem;
+  font-size: .8rem;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+  box-shadow: 0 0 6px rgba(248, 247, 247, 0.3) ;
+	-webkit-box-shadow: inset 0 0 6px rgba(248, 247, 247, 0.3) ;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(248, 247, 247, 0.3) ;;
+	-webkit-box-shadow: inset 0 0 6px rgba(248, 247, 247, 0.3) ;
+	background-color: #555;
+}
+
+/* .App{
+  display: flex;
+} */
+.D-header{
+  padding: 1.2rem;
+  
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.icn1 i, .icn2 i{
+  font-size: 1.2rem;
+}
+.sectD{
+margin-left: 15.5rem;
+background-color: rgb(250, 250, 250);
+padding-bottom: 10rem;
+}
+.sectD h5{
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.cards{
+  padding: 1rem;
+  margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+  padding: .5rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: .6rem;
+}
+.txt{
+  display: flex;
+  flex-direction: column;
+}
+.txt h1{
+  font-size: 1.65rem;
+}
+.txt p{
+  font-size: .7rem;
+}
+
+
+
+/* data-bs-toggle="collapse"
+          data-bs-target="#collapseWidthExample"
+          aria-expanded="false"
+          aria-controls="collapseWidthExample" */
