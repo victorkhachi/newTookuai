@@ -5,7 +5,7 @@
 }
 
 
-  
+  /* -----SIDENAC STYLING----- */
 .sNav{
  background-color: rgb(34, 42, 69);
     padding: 1rem 1rem;
@@ -85,12 +85,13 @@ i{
 	background-color: #555;
 }
 
-/* .App{
-  display: flex;
-} */
+/* ------DASHBOARD STYLING--------- */
+
 .D-header{
   padding: 1.2rem;
-  
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -101,7 +102,7 @@ i{
 .sectD{
 margin-left: 15.5rem;
 background-color: rgb(250, 250, 250);
-padding-bottom: 10rem;
+/* padding-bottom: 10rem; */
 }
 .sectD h5{
   margin: 1rem;
@@ -131,6 +132,48 @@ padding-bottom: 10rem;
 .txt p{
   font-size: .7rem;
 }
+
+/* ----MAIN AREA CHART STYLING */
+.char{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/* ----DASHBOARD LOWER SECTION STYLING----- */
+  .genStats{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+    align-items: center;
+
+  }
+  .reviews{
+    display: flex;
+    flex-direction: column;
+  }
+  .mc{
+    margin: 1rem 0;
+    background-color: white;
+    padding: 0.5rem;
+  }
+  .rade{
+    padding: 2rem .8rem;
+    margin: 0 .8rem;
+  }
+  
+  /* ----DASHBOARD BOXES STYLING----- */
+  
+  .boxx{
+    display: flex;
+    flex-direction: row;
+  }
+  .boxxIn{
+    background-color: white;
+    padding:2rem 2.3rem;
+    margin: .8rem .4rem;
+    text-align: center;
+  }
 
 
 
