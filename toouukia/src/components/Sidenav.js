@@ -21,22 +21,25 @@ const Sidenav = () => {
                 Dashboard
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/analytics" className="li">
                 <i class="fas fa-project-diagram"></i>Analytics
               </NavLink>{" "}
-            </li>
+            </li> */}
             <li
               className=" ul dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <NavLink to="/admin" className="li">
-                <i class="fas fa-user-tag"></i>
-                Admin
-              </NavLink>
+              <i class="fas fa-user-tag"></i>
+              Admin
             </li>
-            <ul className=" dm dropdown-menu">Admin Users-List</ul>
+
+            <ul className=" dm dropdown-menu">
+              <NavLink to="/admin" className="li">
+                Admin Users-List
+              </NavLink>
+            </ul>
           </ul>
           <p className="br">Pages</p>
 
