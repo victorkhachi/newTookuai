@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Sidenav = () => {
   return (
     <section>
@@ -12,24 +12,29 @@ const Sidenav = () => {
           {" "}
           <i class="fas fa-mask h1"></i>Tookuai
         </h1>
-    <hr></hr>
+        <hr></hr>
         <nav>
           <ul>
             <li>
-              {" "}
-              <i class="fas fa-border-all"></i>Dashboard
+              <NavLink to="/" className="li">
+                <i class="fas fa-border-all"></i>
+                Dashboard
+              </NavLink>
             </li>
             <li>
-              {" "}
-              <i class="fas fa-project-diagram"></i>Analytics
+              <NavLink to="/analytics" className="li">
+                <i class="fas fa-project-diagram"></i>Analytics
+              </NavLink>{" "}
             </li>
             <li
               className=" ul dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i class="fas fa-user-tag"></i>
-              Admin
+              <NavLink to="/admin" className="li">
+                <i class="fas fa-user-tag"></i>
+                Admin
+              </NavLink>
             </li>
             <ul className=" dm dropdown-menu">Admin Users-List</ul>
           </ul>
@@ -37,7 +42,9 @@ const Sidenav = () => {
 
           <ul>
             <li>
-              <i class="fas fa-user-tie"></i> Drivers
+              <NavLink to="/drivers" className="li">
+                <i class="fas fa-user-tie"></i> Drivers
+              </NavLink>
             </li>
             <li>
               {" "}
@@ -48,7 +55,6 @@ const Sidenav = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              
               <i class="fab fa-usps"></i> Rental Paxkages
             </li>
             <ul className=" dm dropdown-menu">
