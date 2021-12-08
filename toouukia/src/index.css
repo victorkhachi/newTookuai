@@ -211,7 +211,22 @@ padding: 1rem !important;
     padding: 0.3rem 0.3rem;
     box-shadow: 0 3px 5px rgb(0 0 0 / 50%);
     border-radius: 5px;
-    margin: 0 .2rem;
+    margin: 0 .3rem;
     height:fit-content;
+}
+input{
+  border-radius: 1rem;
+  border: .6px solid;
+}
+input::placeholder{
+  padding: .5rem;
+}
+
+.del{
+  font-size: .8rem;
+  color:white;
+  width: fit-content;
+  padding: .1rem .5rem;
+  background-color: rgb(250, 74, 74);
 }
 

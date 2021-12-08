@@ -50,30 +50,14 @@ const Sidenav = () => {
               </NavLink>
             </li>
             <li>
-              {" "}
-              <i class="fas fa-border-style"></i> Drivers Car Model
-            </li>
-            <li
-              className=" ul dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="fab fa-usps"></i> Rental Paxkages
-            </li>
-            <ul className=" dm dropdown-menu">
-              <li>Basic Rental packages</li>
-              <li>Manage Rental packages</li>
-            </ul>
-            <li>
-              {" "}
-              <i class="fab fa-buromobelexperte"></i>Drivers Car Model
+              <NavLink to="/cModel" className="li">
+                <i class="fas fa-car"></i> Drivers Car Model
+              </NavLink>{" "}
             </li>
             <li>
-              <i class="fas fa-car"></i> Vehicle Type
-            </li>
-            <li>
-              {" "}
-              <i class="fas fa-dharmachakra"></i> Drivers
+              <NavLink to="/rp" className="li">
+                <i class="fab fa-usps"></i> Rental Package
+              </NavLink>{" "}
             </li>
             <li>
               {" "}
