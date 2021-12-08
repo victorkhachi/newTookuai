@@ -13,7 +13,7 @@ const RentalPackage = () => {
           <label className="addi">Search</label>
         </div>
       </div>
-      {/* <table className="table table-striped table-hover tb shadow-sm">
+      <table className="table table-striped table-hover tb shadow-sm">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -79,7 +79,7 @@ const RentalPackage = () => {
             </td>
           </tr>
         </tbody>
-      </table> */}
+      </table>
     </div>
   );
 }
