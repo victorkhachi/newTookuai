@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div>
+        <div className="appHome">
           <Sidenav />
           <Switch>
             <Route path="/" exact component={Dashboard} />
