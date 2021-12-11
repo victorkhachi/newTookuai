@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background: rgb(26, 32, 56);
+}
 
   /* -----SIDENAC STYLING----- */
 .sNav{
@@ -234,4 +236,31 @@ input::placeholder{
   display: flex;
   justify-content: space-between;
 }
+
+/* ------ Sign up page styling---------- */
+.signCtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-top: 2rem ;
+}
+.signCt{
+   background-color: white;
+  border-radius: .5rem;
+   padding:2rem  1rem;
+  margin: 10rem 20rem;
+}
+.signCt h1{
+  text-align: center;
+  font-size: 2rem;
+}
+.btn{
+  text-align: center;
+  justify-content: center;
+  margin: 1rem;
+  background-color: rgb(11, 124, 216);
+  color: white;
+}
+
+
 

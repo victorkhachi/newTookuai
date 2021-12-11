@@ -1,9 +1,10 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
-const Login = () => {
+import { NavLink } from "react-router-dom";
+
+const Sign = () => {
   return (
     <div className="signCt shadow-lg">
-      <h1>Hi 😊 Welcome Back</h1>
+      <h1>Create Account</h1>
       <div className="signCtn">
         <div className="signCtn1">
           <i class="fas fa-car">
@@ -22,13 +23,15 @@ const Login = () => {
             </p>
             <input placeholder="Enter Your username" />
           </div>
-          <NavLink to="/Dash" className="btn">
-            Login
-          </NavLink>
+          <label>
+            <NavLink to="/login" className="btn">
+              Sign Up
+            </NavLink>
+          </label>
         </form>
       </div>
     </div>
   );
 }
 
-export default Login
+export default Sign
