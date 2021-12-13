@@ -10,14 +10,14 @@ const Sidenav = () => {
       >
         <h1>
           {" "}
-          <i class="fas fa-mask h1"></i>Tookuai
+          <i className="fas fa-mask h1"></i>Tookuai
         </h1>
         <hr></hr>
         <nav>
           <ul>
             <li>
-              <NavLink to="/" className="li">
-                <i class="fas fa-border-all"></i>
+              <NavLink to="/Dash" className="li">
+                <i className="fas fa-border-all"></i>
                 Dashboard
               </NavLink>
             </li>
@@ -27,11 +27,11 @@ const Sidenav = () => {
               </NavLink>{" "}
             </li> */}
             <li
-              // className=" ul dropdown-toggle"
-              // data-bs-toggle="dropdown"
-              // aria-expanded="false"
+            className=" ul dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
             >
-              <i class="fas fa-user-tag"></i>
+              <i className="fas fa-user-tag"></i>
               Admin
             </li>
 
@@ -46,38 +46,32 @@ const Sidenav = () => {
           <ul>
             <li>
               <NavLink to="/drivers" className="li">
-                <i class="fas fa-user-tie"></i> Drivers
+                <i className="fas fa-user-tie"></i> Drivers
               </NavLink>
             </li>
             <li>
               <NavLink to="/cModel" className="li">
-                <i class="fas fa-car"></i> Drivers Car Model
+                <i className="fas fa-car"></i> Cars
               </NavLink>{" "}
             </li>
             <li>
               <NavLink to="/rp" className="li">
-                <i class="fab fa-usps"></i> Rental Package
+                <i className="fab fa-usps"></i> Earnings
               </NavLink>{" "}
             </li>
             <li>
               {" "}
-              <i class="fas fa-pause-circle"></i> Pending Bookings
+              <i className="fas fa-pause-circle"></i> Profile
             </li>
+           
             <li>
               {" "}
-              <i class="fas fa-qrcode"></i>Promo Code
+              <i className="fas fa-people-carry"></i>Help
             </li>
+
             <li>
               {" "}
-              <i class="fas fa-people-carry"></i>Reviews
-            </li>
-            <li>
-              {" "}
-              <i class="far fa-edit"></i> Reports
-            </li>
-            <li>
-              {" "}
-              <i class="fas fa-cogs"></i> Settings
+              <i className="fas fa-cogs"></i> Settings
             </li>
           </ul>
         </nav>
