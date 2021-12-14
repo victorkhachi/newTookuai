@@ -18,7 +18,7 @@ const Login = () => {
       </div>
       <form>
         <div className="signCtn2">
-          <h1 style={{ color: "black" }}>Hey!! Welcome Back 🙂</h1>
+          <h1 style={{ color: "black", fontSize:'1.3rem' }}>Hey!! Welcome Back 🙂</h1>
           <p>
             <label>Username</label>
           </p>
