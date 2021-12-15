@@ -256,9 +256,11 @@ input::placeholder {
 }
 .signCtn1 {
   padding: 2.9rem;
+  padding-bottom: 6.8rem;
 }
 .signCtn2 {
   padding: 2rem;
+  padding-top: 3rem;
 }
 .signCtn2 input {
   padding: 0 2rem;
