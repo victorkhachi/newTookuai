@@ -60,7 +60,7 @@ const Login = () => {
         </div>
         <label>
           <button type="submit" className="btn">
-            Sign Up
+            Login
           </button>
           <p style={{ color: "black", fontSize: ".8rem", margin: ".8rem" }}>
             {" "}

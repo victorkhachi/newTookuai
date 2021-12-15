@@ -19,6 +19,7 @@ const useFormLogin = (validate) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
+    window.location="/Dash"
   };
   return { handleChnage, values, handleSubmit, errors };
 };
