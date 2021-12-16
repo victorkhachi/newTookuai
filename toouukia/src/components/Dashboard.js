@@ -1,24 +1,19 @@
 import Sidenav from "./Sidenav";
-import React from "react";
+import React, {useState} from "react";
 import Charts from "./Charts";
 import Area from "./Area";
 import Line from "./Line";
 import Radar from "./Radar";
 
 const Dashboard = () => {
+  const [show,setShow] = useState(true)
   return (
     <div className="appHome">
-      <Sidenav />
+      {show ? <Sidenav /> : " "}
       <section className="sectD">
         <div className="D-header shadow">
           <div className="icn1">
-            <i
-              class="fas fa-bars"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseWidthExample"
-              aria-expanded="false"
-              aria-controls="collapseWidthExample"
-            ></i>
+            <i class="fas fa-bars" onClick={() => setShow(!show)}></i>
             <i class="fas fa-calendar-week"></i>
           </div>
           <div className="icn2">
@@ -36,7 +31,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Number Of Drivers</p>
+              <p>Total Number Of Rides</p>
             </div>
           </div>
 
@@ -46,7 +41,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Number Of Drivers</p>
+              <p>Ongoing Rides</p>
             </div>
           </div>
 
@@ -56,7 +51,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Number Of Drivers</p>
+              <p>Number of vehicles</p>
             </div>
           </div>
 
@@ -66,7 +61,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Number Of Drivers</p>
+              <p>Number Of Scheduled Rides</p>
             </div>
           </div>
         </div>

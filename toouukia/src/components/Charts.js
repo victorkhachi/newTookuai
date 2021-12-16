@@ -53,8 +53,8 @@ class Charts extends Component {
           options={this.state.options}
           series={this.state.series}
           type="area"
-          width="930"
-          height ="330"
+          width="1100"
+          height ="390"
         />
       </div>
     );

@@ -10,11 +10,12 @@ body {
 /* -----SIDENAC STYLING----- */
 .sNav {
   background-color: rgb(34, 42, 69);
-  padding: 1rem 1rem;
+  padding: 1.5rem 5rem;
   padding-left: 0.6rem;
-  width: 20%;
-  position: fixed;
-  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   color: white;
@@ -106,7 +107,7 @@ i {
 .sectD {
   /* margin-left: 15.5rem; */
   background-color: rgb(250, 250, 250);
-  width: 80%;
+  width: 100%;
   /* padding-bottom: 10rem; */
 }
 .sectD h5 {
@@ -188,7 +189,7 @@ i {
   padding: 2rem;
   padding-bottom: 4rem;
 }
-.driver{
+.driver {
   display: flex;
   flex-direction: column;
 }
@@ -235,7 +236,7 @@ input::placeholder {
 }
 .appHome {
   display: flex;
-  justify-content: space-between;
+  /* justify-content:center; */
 }
 
 /* ------ Sign up page styling---------- */
