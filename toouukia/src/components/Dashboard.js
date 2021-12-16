@@ -76,24 +76,24 @@ const Dashboard = () => {
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p>Damages</p>
+                <p className="gS">Total no. of online vehicles</p>
               </div>
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p>Damages</p>
+                <p className="gS">Total user cancelled requests </p>
               </div>
             </div>
             <div className="boxx">
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p>Damages</p>
+                <p className="gS">Total driver cancelled count</p>
               </div>
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p>Damages</p>
+                <p className="gS">No. of scheduled rides</p>
               </div>
             </div>
           </div>

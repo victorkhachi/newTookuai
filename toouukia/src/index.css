@@ -169,7 +169,9 @@ i {
 }
 
 /* ----DASHBOARD BOXES STYLING----- */
-
+.gS{
+  font-size: .9rem;
+}
 .boxx {
   display: flex;
   flex-direction: row;

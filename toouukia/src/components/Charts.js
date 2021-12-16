@@ -12,19 +12,11 @@ class Charts extends Component {
         },
         xaxis: {
           categories: [
-            "Jan",
-            "Feb",
-            "March",
-            "Apr",
-            "May",
-            "June",
-            "July",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-            
+            "Total No. of rides ",
+            "Ongoing Rides ",
+            "Revenue",
+            "No. of vehicles",
+            "Total no. of online vehicles",
           ],
         },
         // dataLabels: {
@@ -33,14 +25,14 @@ class Charts extends Component {
         fill: {
           colors: "#353a78",
         },
-        title:{
-          text: 'Drives Statistics'
-        }
+        title: {
+          text: "Drives Statistics",
+        },
       },
       series: [
         {
           name: "Total Number Of Rides",
-          data: [200, 60, 40, 50, 55, 30, 20, 100, 28,100, 150, 60],
+          data: [200, 60, 40, 50, 55],
         },
       ],
     };
