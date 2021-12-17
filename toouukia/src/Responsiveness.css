@@ -1,7 +1,37 @@
-@media only screen and (max-width:1024px) and (min-width:280px) {
+@media only screen and (max-width: 1024px) and (min-width: 280px) {
+ /* .sNav{
+     position: absolute;
+     z-index: 1;
+ } */
     .signCt {
     flex-direction: column;
-    margin: .5rem;
+    margin: 0.5rem;
+  }
+  .D-header{
+      position: sticky;
+      top: 0;
+  }
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: .8rem 0;
+      width: 100%;
+  }
+  .genStats{
+      flex-direction: column;
+  }
+  .boxxIn{
+      width: 70%;
+      padding: 1.5rem;
+  }
+  .aChart{
+    width: 80%;
+  }
 }
-}
-

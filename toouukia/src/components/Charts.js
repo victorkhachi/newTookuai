@@ -40,7 +40,7 @@ class Charts extends Component {
 
   render() {
     return (
-      <div className="mixed-chart shadow">
+      <div className="mixed-chart shadow aChart">
         <Chart
           options={this.state.options}
           series={this.state.series}

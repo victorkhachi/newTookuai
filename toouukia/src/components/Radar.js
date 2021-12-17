@@ -29,6 +29,12 @@ class Radar extends Component {
           data: [20, 100, 40, 90, 85, 30, 50],
         },
       ],
+      responsive: [
+        {
+          breakpoint: 1000,
+          options: {},
+        },
+      ],
     };
   }
 
@@ -39,7 +45,7 @@ class Radar extends Component {
           options={this.state.options}
           series={this.state.series}
           type="radar"
-          width="310"
+          width="260"
           height="300"
         />
       </div>
