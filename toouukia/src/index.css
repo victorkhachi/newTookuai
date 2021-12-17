@@ -129,6 +129,8 @@ i {
   flex-direction: row;
   justify-content: space-around;
   border-radius: 0.6rem;
+  width: 35%;
+  margin: .8rem;
 }
 .txt {
   display: flex;
@@ -182,6 +184,7 @@ i {
   padding: 2rem 2.3rem;
   margin: 0.8rem 0.4rem;
   text-align: center;
+  width: 80%;
 }
 
 /* data-bs-toggle="collapse"

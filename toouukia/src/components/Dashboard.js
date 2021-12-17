@@ -78,7 +78,7 @@ const Dashboard = () => {
         </div>
 
         <section className="char">
-          {/* <Charts /> */}
+          <Charts />
         </section>
 
         <section className="genStats">
