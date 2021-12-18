@@ -45,7 +45,7 @@ class RadarMobile extends Component {
           options={this.state.options}
           series={this.state.series}
           type="radar"
-          width="320"
+          width="265"
           height="300"
         />
       </div>

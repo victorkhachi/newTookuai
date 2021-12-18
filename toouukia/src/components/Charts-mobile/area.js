@@ -45,7 +45,7 @@ class AreaMobile extends Component {
           options={this.state.options}
           series={this.state.series}
           type="area"
-          width="340"
+          width="300"
           height="300"
         />
       </div>

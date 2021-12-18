@@ -1,10 +1,21 @@
-import React from 'react'
 import Sidenav from '../Sidenav';
+import React, { useState, useEffect } from "react";
+const CarModel = () => {
+ const [show, setShow] = useState(true);
+ const handleResize = () => {
+   if (window.innerWidth > 1265) {
+     setShow(true);
+   } else {
+     setShow(false);
+   }
+ };
 
-const carModel = () => {
+ useEffect(() => {
+   window.addEventListener("resize", handleResize);
+ });
   return (
     <div className="appHome">
-      <Sidenav />
+      {show ? <Sidenav /> : " "}
       <div className="sectD driver">
         <div className="D-header shadow">
           <div className="icn1">
@@ -107,4 +118,4 @@ const carModel = () => {
   );
 }
 
-export default carModel
+export default CarModel

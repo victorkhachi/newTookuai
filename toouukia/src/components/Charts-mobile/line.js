@@ -49,7 +49,7 @@ class LineMobile extends Component {
           options={this.state.options}
           series={this.state.series}
           type="line"
-          width="320"
+          width="260"
           height="300"
         />
       </div>
