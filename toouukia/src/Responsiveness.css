@@ -40,4 +40,7 @@
   .mobile{
     display: block;
   }
+  .tIcon input{
+    height: fit-content;
+  }
 }

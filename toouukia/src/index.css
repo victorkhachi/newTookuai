@@ -257,14 +257,14 @@ input::placeholder {
   transition: ease-in-out 2s;
  animation: slideFromTop 1s linear;
 }
-@keyframes slideFromTop {
+/* @keyframes slideFromTop {
     0%{
         transform: translateX(-100%);
     }
     100%{
         transform: translateX(0);
     }
-}
+} */
 
 /* ------ Sign up page styling---------- */
 .signCtn {

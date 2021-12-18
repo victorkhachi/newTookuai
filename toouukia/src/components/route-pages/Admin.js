@@ -3,7 +3,7 @@ import Sidenav from '../Sidenav';
 import  React, { useState, useEffect } from "react";
 
 const Admin = () => {
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
     const handleResize = () => {
       if (window.innerWidth > 1265) {
         setShow(true);
@@ -21,13 +21,7 @@ const Admin = () => {
       <div className="sectD">
         <div className="D-header shadow">
           <div className="icn1">
-            <i
-              class="fas fa-bars"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseWidthExample"
-              aria-expanded="false"
-              aria-controls="collapseWidthExample"
-            ></i>
+            <i class="fas fa-bars" onClick={() => setShow(!show)}></i>
             <i class="fas fa-calendar-week"></i>
           </div>
           <div className="icn2">
