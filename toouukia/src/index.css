@@ -5,6 +5,7 @@
 }
 body {
   background: rgb(26, 32, 56);
+  color: rgb(26, 32, 56);;
 }
 
 /* -----SIDENAC STYLING----- */
@@ -24,6 +25,17 @@ body {
   overflow-y: auto;
   transition: 3s linear;
 }
+.Snav{
+  animation: slideFromTop 1s linear;
+}
+/* @keyframes slideFromTop {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
 h1 {
   font-size: 1.8rem;
 }
@@ -243,7 +255,15 @@ input::placeholder {
 .appHome {
   display: flex;
   transition: ease-in-out 2s;
-  /* justify-content:center; */
+ animation: slideFromTop 1s linear;
+}
+@keyframes slideFromTop {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 /* ------ Sign up page styling---------- */

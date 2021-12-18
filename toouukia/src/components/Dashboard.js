@@ -4,7 +4,9 @@ import Charts from "./Charts";
 import Area from "./Area";
 import Line from "./Line";
 import Radar from "./Radar";
-
+import AreaMobile from "./Charts-mobile/area"
+import RadarMobile from "./Charts-mobile/radar";
+import LineMobile from "./Charts-mobile/line";
 const Dashboard = () => {
   const [show,setShow] = useState(true)
   const handleResize = () => {
@@ -78,7 +80,12 @@ const Dashboard = () => {
         </div>
 
         <section className="char">
-          <Charts />
+          <div className="pc">
+            <Charts />
+          </div>
+          <div className="mobile">
+            <AreaMobile />
+          </div>
         </section>
 
         <section className="genStats">
@@ -109,11 +116,22 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="dNut">
-            <Radar />
+            <div className="pc">
+              <Radar />
+            </div>
+            <div className="mobile">
+              <RadarMobile />
+            </div>
           </div>
           <div className="lineArea">
-            <Line />
-            <Area />
+            <div className="pc">
+              <Line />
+              <Area />
+            </div>
+            <div className="mobile">
+              <LineMobile />
+              <AreaMobile />
+            </div>
           </div>
         </section>
       </section>

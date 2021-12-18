@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 const Sidenav = () => {
   return (
-    <section>
+    <section className="Snav">
       <header
         className="sNav collapse show collapse-horizontal"
         id="collapseWidthExample"
