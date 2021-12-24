@@ -18,6 +18,13 @@ const Sign = () => {
         <p>Admin Dashboard</p>
         <p>Better Decision Making</p>
         <p>Access To Data</p>
+        <p
+          style={{
+            fontSize:".7rem"
+          }}
+        >
+          Click On Login to continue
+        </p>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="signCtn2">
