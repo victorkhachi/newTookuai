@@ -7,6 +7,9 @@ import carModel from "./components/route-pages/CarModel";
 import RentalPackage from "./components/route-pages/RentalPackage";
 import Login from "./components/route-pages/Login"
 import Signup from "./components/route-pages/Sign"
+import Settings from "./components/route-pages/Settings";
+import Profile from "./components/route-pages/Profile"
+import Help from "./components/route-pages/Help"
 import { Route, BrowserRouter , Switch,  Redirect  } from "react-router-dom"
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
           <Route path="/drivers" component={Drivers} />
           <Route path="/cModel" component={carModel} />
           <Route path="/rp" component={RentalPackage} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/help" component={Help} />
           <Redirect to="/" />
         </Switch>
       </BrowserRouter>

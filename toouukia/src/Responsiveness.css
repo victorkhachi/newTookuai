@@ -1,46 +1,60 @@
-.mobile{
+.formm{
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  /* z-index: 1; */
+  padding: 2rem;
+  top: 30%;
+  left: 40%;
+}
+.Formm{
+  display: flex;
+  flex-direction: column;
+}
+.mobile {
   display: none;
 }
 @media only screen and (max-width: 1024px) and (min-width: 280px) {
- .sNav{
-     position: absolute;
-     z-index: 1;
- }
-    .signCt {
+  .sNav {
+    position: absolute;
+    z-index: 1;
+  }
+  .signCt {
     flex-direction: column;
     margin: 0.5rem;
   }
-  .D-header{
-      position: sticky;
-      top: 0;
+  .D-header {
+    position: sticky;
+    top: 0;
   }
   .cards {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: .8rem 0;
-      width: 100%;
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.8rem 0;
+    width: 100%;
   }
-  .genStats{
-      flex-direction: column;
+  .genStats {
+    flex-direction: column;
   }
-  .boxxIn{
-      width: 70%;
-      padding: 1.5rem;
+  .boxxIn {
+    width: 70%;
+    padding: 1.5rem;
   }
-  .pc{
+  .pc {
     display: none;
   }
-  .mobile{
+  .mobile {
     display: block;
   }
-  .tIcon input{
+  .tIcon input {
     height: fit-content;
   }
 }

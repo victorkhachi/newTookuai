@@ -1,19 +1,20 @@
-
-import Sidenav from '../Sidenav';
+import Sidenav from "../Sidenav";
 import React, { useState, useEffect } from "react";
+import DriverForm from "../DriverForm";
 const Drivers = () => {
-   const [show, setShow] = useState(false);
-   const handleResize = () => {
-     if (window.innerWidth > 1265) {
-       setShow(true);
-     } else {
-       setShow(false);
-     }
-   };
+  const [show, setShow] = useState(false);
+  const [view, setview] = useState(false);
+  const handleResize = () => {
+    if (window.innerWidth > 1265) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
 
-   useEffect(() => {
-     window.addEventListener("resize", handleResize);
-   });
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
   return (
     <div className="appHome">
       {show ? <Sidenav /> : " "}
@@ -35,7 +36,9 @@ const Drivers = () => {
               <p>Drivers List</p>
             </div>
             <div className="tIcon">
-              <label className="addi">Add New Driver</label>
+              <label className="addi" onClick={() => setview(!view)}>
+                Add New Driver
+              </label>
               <label className="addi">Search</label>
             </div>
           </div>
@@ -87,8 +90,10 @@ const Drivers = () => {
           </table>
         </div>
       </div>
+      {view ? <DriverForm /> :  "" }
+     
     </div>
   );
-}
+};
 
-export default Drivers
+export default Drivers;

@@ -27,9 +27,9 @@ const Sidenav = () => {
               </NavLink>{" "}
             </li> */}
             <li
-            className=" ul dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+              className=" ul dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
               <i className="fas fa-user-tag"></i>
               Admin
@@ -60,18 +60,21 @@ const Sidenav = () => {
               </NavLink>{" "}
             </li>
             <li>
-              {" "}
-              <i className="fas fa-pause-circle"></i> Profile
-            </li>
-           
-            <li>
-              {" "}
-              <i className="fas fa-people-carry"></i>Help
+              <NavLink to="/profile" className="li">
+                <i className="fas fa-pause-circle"></i> Profile
+              </NavLink>{" "}
             </li>
 
             <li>
-              {" "}
-              <i className="fas fa-cogs"></i> Settings
+              <NavLink to="/help" className="li">
+                <i className="fas fa-people-carry"></i>Help
+              </NavLink>{" "}
+            </li>
+
+            <li>
+              <NavLink to="/settings" className="li">
+                <i className="fas fa-cogs"></i> Settings
+              </NavLink>{" "}
             </li>
           </ul>
         </nav>

@@ -1,7 +1,9 @@
 import Sidenav from '../Sidenav';
 import React, { useState, useEffect } from "react";
+import Carform from '../Carform';
 const CarModel = () => {
  const [show, setShow] = useState(false);
+ const [view, setview] = useState(false);
  const handleResize = () => {
    if (window.innerWidth > 1265) {
      setShow(true);
@@ -35,7 +37,9 @@ const CarModel = () => {
             </div>
             <div className="tIcon">
               <input type="text" placeholder="Search" />
-              <label className="addi">Add New Driver</label>
+              <label className="addi" onClick={() => setview(!view)}>
+                Add New Car
+              </label>
               <label className="addi">Search</label>
             </div>
           </div>
@@ -102,6 +106,7 @@ const CarModel = () => {
           </table>
         </div>
       </div>
+      {view ? <Carform /> : ""}
     </div>
   );
 }
