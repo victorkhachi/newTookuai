@@ -1,12 +1,17 @@
-
+import { getList, setItem } from "../../Services/List";
 import React, { useState, useEffect } from "react";
 const DriverForm = () => {
-     const [view, setview] = useState(false);
+  const [view, setview] = useState(false);
+  const [itemInput, setItemInput] = useState("");
   return (
     <div className="formm shadow-lg">
       <div className="Formm">
         <label>Enter Driver's Name</label>
-        <input placeholder="Driver's Name" />
+        <input
+          placeholder="Driver's Name"
+          onChange={(event) => setItemInput(event.target.value)}
+          value={itemInput}
+        />
         <label>Enter Driver's Car</label>
         <input placeholder="Driver's Car" />
         <label>Enter Driver's ID</label>
@@ -57,11 +62,6 @@ const DriverForm = () => {
       </div>
     </div>
   );
-}
+};
 
-export default DriverForm
-
-
-
-
-
+export default DriverForm;

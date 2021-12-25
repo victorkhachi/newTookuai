@@ -1,9 +1,20 @@
 import Sidenav from "../Sidenav";
 import React, { useState, useEffect } from "react";
 import DriverForm from "../DriverForm";
+import { getList } from "../../Services/List";
 const Drivers = () => {
   const [show, setShow] = useState(false);
   const [view, setview] = useState(false);
+  const [list, setList] = useState([]);
+  useEffect(() => {
+    let mounted = true;
+    getList().then((items) => {
+      if (mounted) {
+        setList(items);
+      }
+    });
+    return () => (mounted = false);
+  }, []);
   const handleResize = () => {
     if (window.innerWidth > 1265) {
       setShow(true);
@@ -54,7 +65,7 @@ const Drivers = () => {
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
+                {list.map(item => <td key={item.item}>{item.item}</td>)}
                 <td>Otto</td>
                 <td>@mdo</td>
               </tr>
@@ -90,8 +101,7 @@ const Drivers = () => {
           </table>
         </div>
       </div>
-      {view ? <DriverForm /> :  "" }
-     
+      {view ? <DriverForm /> : ""}
     </div>
   );
 };
