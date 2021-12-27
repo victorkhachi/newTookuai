@@ -1,4 +1,4 @@
-import { getList, setItem } from "../../Services/List";
+// import { getList, setItem } from "../../Services/List";
 import React, { useState, useEffect } from "react";
 const DriverForm = () => {
   const [view, setview] = useState(false);
@@ -9,8 +9,8 @@ const DriverForm = () => {
         <label>Enter Driver's Name</label>
         <input
           placeholder="Driver's Name"
-          onChange={(event) => setItemInput(event.target.value)}
-          value={itemInput}
+          // onChange={(event) => setItemInput(event.target.value)}
+          // value={itemInput}
         />
         <label>Enter Driver's Car</label>
         <input placeholder="Driver's Car" />

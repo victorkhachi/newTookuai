@@ -29,77 +29,50 @@ const CarModel = () => {
           </div>
         </div>
         <div className="admin">
-          <div className="title">
-            <div className="t-txt">
-              <p>Driver Cars List</p>
+          <p>Total Income: 40000</p>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Withdraw Earnings
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <div className="tIcon">
-              <input type="text" placeholder="Search" />
-              <label className="addi">Add New Driver</label>
-              <label className="addi">Search</label>
+            <div class="modal-body">
+              TRANSACTION SUCCESSFUL (this would be effective once backend is
+              available)
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
-          <table className="table table-striped table-hover tb shadow-sm">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Driver</th>
-                <th scope="col">Car Model</th>
-                <th scope="col">Condition</th>
-                {/* <th scope="col">Action</th> */}
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>G-wagon</td>
-                <td>
-                  On G <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Buggati</td>
-                <td>
-                  Good <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>Maybach</td>
-                <td>
-                  Good <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>
-                  @mdo <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>
-                  @fat <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>mclAREN</td>
-                <td>
-                  @twitter <p className="del">X</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>

@@ -31,13 +31,14 @@ const Settings = () => {
         </div>
         <div className="admin">
           <p>
-            <NavLink to="/">
-             Logout
-            </NavLink>{" "}
+            <NavLink to="/">Logout</NavLink>{" "}
           </p>
-          <p>
-              In progress
-          </p>
+          <p>Language</p>
+          <input className="radio" type="radio" />
+          English
+          <input type="radio" className="radio" />
+          Arabic
+          <p>In progress</p>
         </div>
       </div>
     </div>

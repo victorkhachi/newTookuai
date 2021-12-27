@@ -32,6 +32,7 @@ const Help = () => {
          </div>
          <div className="admin">
            <p>Help In progress</p>
+           <p><a href="">Contact Support</a></p>
          </div>
        </div>
      </div>

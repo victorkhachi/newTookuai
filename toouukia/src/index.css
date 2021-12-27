@@ -315,3 +315,7 @@ form {
   margin-left: 0.2rem;
   background-color: white;
 }
+/* Settings Styling */
+.radio{
+  margin: 0 1rem;
+}
