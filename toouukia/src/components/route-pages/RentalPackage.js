@@ -1,7 +1,7 @@
 import Sidenav from "../Sidenav";
 import React, { useState, useEffect } from "react";
 const CarModel = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const handleResize = () => {
     if (window.innerWidth > 1265) {
       setShow(true);

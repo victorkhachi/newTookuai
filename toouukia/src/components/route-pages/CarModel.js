@@ -2,7 +2,7 @@ import Sidenav from '../Sidenav';
 import React, { useState, useEffect } from "react";
 import Carform from '../Carform';
 const CarModel = () => {
- const [show, setShow] = useState(false);
+ const [show, setShow] = useState(true);
  const [view, setview] = useState(false);
  const handleResize = () => {
    if (window.innerWidth > 1265) {

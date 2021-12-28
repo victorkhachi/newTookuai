@@ -2,19 +2,20 @@ import Sidenav from "../Sidenav";
 import React, { useState, useEffect } from "react";
 import DriverForm from "../DriverForm";
 import { getList } from "../../Services/List";
+import DriverT from "./DriverT";
 const Drivers = () => {
   const [show, setShow] = useState(false);
   const [view, setview] = useState(false);
-  const [list, setList] = useState([]);
-  useEffect(() => {
-    let mounted = true;
-    getList().then((items) => {
-      if (mounted) {
-        setList(items);
-      }
-    });
-    return () => (mounted = false);
-  }, []);
+  // const [list, setList] = useState([]);
+  // useEffect(() => {
+  //   let mounted = true;
+  //   getList().then((items) => {
+  //     if (mounted) {
+  //       setList(items);
+  //     }
+  //   });
+  //   return () => (mounted = false);
+  // }, []);
   const handleResize = () => {
     if (window.innerWidth > 1265) {
       setShow(true);
@@ -42,63 +43,7 @@ const Drivers = () => {
           </div>
         </div>
         <div className="admin">
-          <div className="title">
-            <div className="t-txt">
-              <p>Drivers List</p>
-            </div>
-            <div className="tIcon">
-              <label className="addi" onClick={() => setview(!view)}>
-                Add New Driver
-              </label>
-              <label className="addi">Search</label>
-            </div>
-          </div>
-          <table className="table table-striped table-hover tb shadow-sm">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                {list.map(item => <td key={item.item}>{item.item}</td>)}
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+         <DriverT />
         </div>
       </div>
       {view ? <DriverForm /> : ""}

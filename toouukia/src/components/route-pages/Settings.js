@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Sidenav from "../Sidenav";
 import { NavLink } from "react-router-dom";
 const Settings = () => {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
     const handleResize = () => {
       if (window.innerWidth > 1265) {
         setShow(true);
