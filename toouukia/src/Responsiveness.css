@@ -1,17 +1,4 @@
-.formm{
-  display:flex;
-  flex-direction: column;
-  background-color: white;
-  position: absolute;
-  /* z-index: 1; */
-  padding: 2rem;
-  top: 30%;
-  left: 40%;
-}
-.Formm{
-  display: flex;
-  flex-direction: column;
-}
+
 .mobile {
   display: none;
 }

@@ -5,31 +5,34 @@ export default class Carform extends Component {
     return (
       <div className="formm shadow-lg">
         <form onSubmit={this.props.handleFormSubmit} className="Formm">
-          <label>Enter Car Name</label>
+          <label className="labell">Enter Car Name</label>
           <input
+            className="inputt"
             placeholder="Car's Name"
             value={this.props.newName}
             type="text"
             name="name"
             onChange={this.props.handleInputChange}
           />
-          <label>Enter Car's Model</label>
+          <label className="labell">Enter Car's Model</label>
           <input
+            className="inputt"
             placeholder="Car Model"
             value={this.props.newModel}
             type="text"
             name="model"
             onChange={this.props.handleInputChange}
           />
-          <label>Enter Car's Platenum</label>
+          <label className="labell">Enter Car's Platenum</label>
           <input
+            className="inputt"
             value={this.props.newPlateNum}
             type="text"
             name="plateNum"
             onChange={this.props.handleInputChange}
             placeholder="Plate Number"
           />
-          <button type="submit" value="Submit">
+          <button className="btnnn" type="submit" value="Submit">
             Add Car
           </button>
         </form>

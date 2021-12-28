@@ -319,3 +319,41 @@ form {
 .radio{
   margin: 0 1rem;
 }
+
+/* ADD DRIVER/CAR/ADMIN FORM DESIGN*/
+.formm{
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom-right-radius: 3rem ;
+  border-top-left-radius: 3rem;
+  position: absolute;
+  /* z-index: 1; */
+  padding: 2rem;
+  top: 30%;
+  left: 40%;
+  transition: 2s linear;
+}
+.Formm{
+  display: flex;
+  flex-direction: column;
+  transition: 2s linear;
+}
+.labell{
+  margin: .3rem 0;
+  color: rgb(26, 32, 56) !important;
+}
+.inputt::placeholder{
+  padding: 0 .5rem;
+}
+.inputt:focus{
+  padding:0 1rem;
+  font-size: 1rem !important;
+  outline: rgb(34, 42, 69);
+}
+.btnnn{
+  background-color: rgb(26, 32, 56);
+  color: white;
+  border-radius: .6rem;
+  margin: .8rem 0 ;
+}
