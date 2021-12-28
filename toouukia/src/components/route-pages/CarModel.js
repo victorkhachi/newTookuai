@@ -1,6 +1,7 @@
 import Sidenav from '../Sidenav';
 import React, { useState, useEffect } from "react";
 import Carform from '../Carform';
+import CarT from './CarT';
 const CarModel = () => {
  const [show, setShow] = useState(true);
  const [view, setview] = useState(false);
@@ -31,79 +32,7 @@ const CarModel = () => {
           </div>
         </div>
         <div className="admin">
-          <div className="title">
-            <div className="t-txt">
-              <p>Driver Cars List</p>
-            </div>
-            <div className="tIcon">
-              <input type="text" placeholder="Search" />
-              <label className="addi" onClick={() => setview(!view)}>
-                Add New Car
-              </label>
-              <label className="addi">Search</label>
-            </div>
-          </div>
-          <table className="table table-striped table-hover tb shadow-sm">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Driver</th>
-                <th scope="col">Car Model</th>
-                <th scope="col">Condition</th>
-                {/* <th scope="col">Action</th> */}
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>G-wagon</td>
-                <td>
-                  On G <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Buggati</td>
-                <td>
-                  Good <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>Maybach</td>
-                <td>
-                  Good <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>
-                  @mdo <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>
-                  @fat <p className="del">X</p>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>mclAREN</td>
-                <td>
-                  @twitter <p className="del">X</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <CarT />
         </div>
       </div>
       {view ? <Carform /> : ""}
