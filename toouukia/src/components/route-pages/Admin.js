@@ -1,8 +1,9 @@
 
 import Sidenav from '../Sidenav';
 import  React, { useState, useEffect } from "react";
-
+import { useTranslation } from 'react-i18next';
 const Admin = () => {
+  const {t} = useTranslation()
     const [show, setShow] = useState(false);
     const handleResize = () => {
       if (window.innerWidth > 1265) {
@@ -33,20 +34,20 @@ const Admin = () => {
         <div className="admin">
           <div className="title">
             <div className="t-txt">
-              <p>Admin List</p>
+              <p> {t("AdminList")}</p>
             </div>
             <div className="tIcon">
-              <label className="addi">Add New Admin</label>
-              <label className="addi">Search</label>
+              <label className="addi">{t("AddMin")}</label>
+              <label className="addi">{t("Search")}</label>
             </div>
           </div>
           <table className="table table-striped table-hover tb shadow">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">{t("Fn")}</th>
+                <th scope="col">{t("lN")}</th>
+                <th scope="col">{t("APh")}</th>
               </tr>
             </thead>
             <tbody>

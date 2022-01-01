@@ -1,6 +1,8 @@
 {
   "list": [
-    { "id": 1, "item": "bread" },
-    { "id": 2, "item": "grapes" }
+    {
+      "item": "Maduka",
+      "id": 1
+    }
   ]
 }

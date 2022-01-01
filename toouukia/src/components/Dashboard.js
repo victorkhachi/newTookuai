@@ -7,7 +7,9 @@ import Radar from "./Radar";
 import AreaMobile from "./Charts-mobile/area"
 import RadarMobile from "./Charts-mobile/radar";
 import LineMobile from "./Charts-mobile/line";
+import { useTranslation } from "react-i18next";
 const Dashboard = () => {
+   const { t } = useTranslation();
   const [show,setShow] = useState(true)
   const handleResize = () => {
     if (window.innerWidth > 1265 ) {
@@ -36,7 +38,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <h5>OVERVIEW</h5>
+        <h5>{t("Ds")}</h5>
         <div className="cards">
           <div className="card shadow-sm">
             <div className="icn">
@@ -44,7 +46,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Total Number Of Rides</p>
+              <p>{t("Tr")}</p>
             </div>
           </div>
 
@@ -54,7 +56,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Ongoing Rides</p>
+              <p>{t("Or")}</p>
             </div>
           </div>
 
@@ -64,7 +66,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Number of vehicles</p>
+              <p>{t("Nv")}</p>
             </div>
           </div>
 
@@ -74,7 +76,7 @@ const Dashboard = () => {
             </div>
             <div className="txt">
               <h1>20,000</h1>
-              <p>Number Of Scheduled Rides</p>
+              <p>{t("Nsr")}</p>
             </div>
           </div>
         </div>
@@ -94,24 +96,24 @@ const Dashboard = () => {
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p className="gS">Total no. of online vehicles</p>
+                <p className="gS">{t("NOv")}</p>
               </div>
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p className="gS">Total user cancelled requests </p>
+                <p className="gS">{t("Tcc")} </p>
               </div>
             </div>
             <div className="boxx">
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p className="gS">Total driver cancelled count</p>
+                <p className="gS">{t("Vo")}</p>
               </div>
               <div className="boxxIn shadow">
                 <i class="fas fa-user"></i>
                 <h2>600</h2>
-                <p className="gS">No. of scheduled rides</p>
+                <p className="gS">{t("Nsr")}</p>
               </div>
             </div>
           </div>

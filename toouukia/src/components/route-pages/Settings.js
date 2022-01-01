@@ -1,7 +1,24 @@
 import React, { useState, useEffect } from "react";
 import Sidenav from "../Sidenav";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
+const languages = [
+  {
+    code: "en",
+    name: "English",
+    country_code: "gb",
+  },
+  {
+    code: "ar",
+    name: "العربية",
+    country_code: "sa",
+  },
+];
+
 const Settings = () => {
+   const { t } = useTranslation();
     const [show, setShow] = useState(true);
     const handleResize = () => {
       if (window.innerWidth > 1265) {
@@ -31,14 +48,35 @@ const Settings = () => {
         </div>
         <div className="admin">
           <p>
-            <NavLink to="/">Logout</NavLink>{" "}
+            <NavLink to="/">{t("lg")}</NavLink>{" "}
           </p>
-          <p>Language</p>
-          <input className="radio" type="radio" />
-          English
-          <input type="radio" className="radio" />
-          Arabic
-          <p>In progress</p>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-globe"> LANGUAGES</i>
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              {languages.map(({ code, name, country_code }) => (
+                <li key={country_code}>
+                  <button
+                    className="dropdown-item"
+                    onClick={() => i18next.changeLanguage(code)}
+                  >
+                    <span
+                      className={`flag-icon flag-icon-${country_code} mx-2`}
+                    ></span>
+                    {name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p>{t("ip")}</p>
         </div>
       </div>
     </div>

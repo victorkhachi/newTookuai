@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import Carform from '../Carform';
 import CarTable from '../CarTable';
+import ADriver from '../aDriver';
+import Noti1 from './Noti1';
 export default class CarT extends Component {
   constructor() {
     super();
 
     this.state = {
       isActive: false,
+      isActive2: false,
       name: "",
       model: "",
       plateNum: "",
+      driver: "",
       items: [],
     };
   }
@@ -23,6 +27,7 @@ export default class CarT extends Component {
       name: this.state.name,
       model: this.state.model,
       plateNum: this.state.plateNum,
+      driver: this.state.driver,
     });
     this.setState({
       items,
@@ -46,6 +51,9 @@ export default class CarT extends Component {
   handleToggle = () => {
     this.setState({ isActive: !this.state.isActive });
   };
+  handleToggl = () => {
+    this.setState({ isActive2: !this.state.isActive2 });
+  };
   render() {
     return (
       <div>
@@ -56,6 +64,9 @@ export default class CarT extends Component {
           <div className="tIcon">
             <label className="addi" onClick={this.handleToggle}>
               Add New Driver
+            </label>
+            <label className="addi" onClick={this.handleToggl}>
+              Assign Driver
             </label>
             <label className="addi">Search</label>
           </div>
@@ -69,6 +80,10 @@ export default class CarT extends Component {
             newmodel={this.state.model}
           />
         ) : null}
+        {this.state.isActive2 ? (
+          <ADriver/>
+        ) : null}
+        
       </div>
     );
   }

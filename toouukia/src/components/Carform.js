@@ -22,7 +22,8 @@ export default class Carform extends Component {
             type="text"
             name="model"
             onChange={this.props.handleInputChange}
-          />
+          >
+          </input>
           <label className="labell">Enter Car's Platenum</label>
           <input
             className="inputt"
@@ -31,6 +32,15 @@ export default class Carform extends Component {
             name="plateNum"
             onChange={this.props.handleInputChange}
             placeholder="Plate Number"
+          />
+          <label className="labell">Enter Driver's Name</label>
+          <input
+            className="inputt"
+            value={this.props.newDriver}
+            type="text"
+            name="driver"
+            onChange={this.props.handleInputChange}
+            placeholder="Driver"
           />
           <button className="btnnn" type="submit" value="Submit">
             Add Car

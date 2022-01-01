@@ -1,6 +1,8 @@
 import Sidenav from "../Sidenav";
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 const CarModel = () => {
+  const {t} =  useTranslation()
   const [show, setShow] = useState(true);
   const handleResize = () => {
     if (window.innerWidth > 1265) {
@@ -29,12 +31,9 @@ const CarModel = () => {
           </div>
         </div>
         <div className="admin">
-          <p>Total Income: 40000</p>
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Withdraw Earnings
+          <p>{t("Ti")}: 40000</p>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+            {t("We")}
           </button>
         </div>
       </div>

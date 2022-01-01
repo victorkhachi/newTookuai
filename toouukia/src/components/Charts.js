@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
 class Charts extends Component {
+  
   constructor(props) {
     super(props);
 
@@ -36,6 +37,7 @@ class Charts extends Component {
         },
       ],
     };
+      
   }
 
   render() {

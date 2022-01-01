@@ -344,10 +344,10 @@ form {
   color: rgb(26, 32, 56) !important;
 }
 .inputt::placeholder{
-  padding: 0 .5rem;
+  padding: 0 .5rem !important;
 }
 .inputt:focus{
-  padding:0 1rem;
+  padding:0 1rem !important;
   font-size: 1rem !important;
   outline: rgb(34, 42, 69);
 }
@@ -356,4 +356,12 @@ form {
   color: white;
   border-radius: .6rem;
   margin: .8rem 0 ;
+}
+/* ALERT-LI STYLING */
+.alertLi{
+  margin: 1rem;
+  border: 1.6px solid rgb(165, 3, 3);
+  border-radius: 5px;
+  color:rgb(26, 32, 56);
+  padding: 1rem;
 }

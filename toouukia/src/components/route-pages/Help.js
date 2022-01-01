@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Sidenav from "../Sidenav";
 import { NavLink } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 const Help = () => {
+  const {t} = useTranslation()
    const [show, setShow] = useState(true);
    const handleResize = () => {
      if (window.innerWidth > 1265) {
@@ -31,8 +32,10 @@ const Help = () => {
            </div>
          </div>
          <div className="admin">
-           <p>Help In progress</p>
-           <p><a href="">Contact Support</a></p>
+           <p>{t("Help")}</p>
+           <p>
+             <a href="">{t("Csupport")}</a>
+           </p>
          </div>
        </div>
      </div>

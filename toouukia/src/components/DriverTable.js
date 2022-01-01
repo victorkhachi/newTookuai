@@ -11,8 +11,9 @@ export default class DriverTable extends Component {
             <tr>
               <th scope="col">#</th>
               <th scope="col">Driver's Name</th>
-              <th scope="col">Car Id</th>
-              <th scope="col">Assinged Car</th>{" "}
+              <th scope="col">Age</th>
+              <th scope="col">Phone Number</th>{" "}
+              <th scope="col"> Car</th>{" "}
             </tr>{" "}
           </thead>
           <tbody>
@@ -22,6 +23,7 @@ export default class DriverTable extends Component {
                   <th scope="row">#</th>
                   <td>{item.username}</td>
                   <td>{item.password}</td>
+                  <td>{item.aDriver}</td>
                   <td>{item.car}</td>
                 </tr>
               );

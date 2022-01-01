@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
 import DriverForm from '../DriverForm';
 import DriverTable from '../DriverTable';
-
+import ADriver from '../aDriver';
+import Noti1 from './Noti1';
+import { useTranslation } from 'react-i18next';
 export default class DriverT extends Component {
   constructor() {
     super();
 
     this.state = {
       isActive: false,
+      isActive2: false,
       username: "",
       password: "",
       car: "",
+      aDriver: "",
       items: [],
     };
   }
@@ -23,7 +27,8 @@ export default class DriverT extends Component {
     items.push({
       username: this.state.username,
       password: this.state.password,
-      car: this.state.car
+      car: this.state.car,
+      aDriver: this.state.aDriver
     });
     this.setState({
       items,
@@ -46,6 +51,9 @@ export default class DriverT extends Component {
 
   handleToggle = () => {
     this.setState({ isActive: !this.state.isActive });
+  };
+  handleToggle2 = () => {
+    this.setState({ isActive2: !this.state.isActive2 });
   };
   render() {
     return (
@@ -70,6 +78,15 @@ export default class DriverT extends Component {
             newPassword={this.state.password}
           />
         ) : null}
+        {this.state.isActive2 ? (
+          <ADriver
+            handleFormSubmit={this.handleFormSubmit}
+            handleInputChange={this.handleInputChange}
+            newUsername={this.state.username}
+            newPassword={this.state.password}
+          />
+        ) : null}
+        <Noti1 />
       </div>
     );
   }

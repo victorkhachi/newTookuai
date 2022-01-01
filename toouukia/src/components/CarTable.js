@@ -13,6 +13,7 @@ export default class CarTable extends Component {
               <th scope="col">Car's Name</th>
               <th scope="col"> Model</th>
               <th scope="col"> Plate  Number</th>{" "}
+              <th scope="col">Driver</th>{" "}
             </tr>{" "}
           </thead>
           <tbody>
@@ -23,6 +24,7 @@ export default class CarTable extends Component {
                   <td>{item.name}</td>
                   <td>{item.model}</td>
                   <td>{item.plateNum}</td>
+                  <td>{item.driver}</td>
                 </tr>
               );
             })}

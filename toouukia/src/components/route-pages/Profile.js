@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Sidenav from "../Sidenav";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const {t} = useTranslation()
      const [show, setShow] = useState(true);
      const handleResize = () => {
        if (window.innerWidth > 1265) {
@@ -30,7 +32,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="admin">
-          <p>Profile In progress</p>
+          <p>{t("Profile")}</p>
         </div>
       </div>
     </div>
