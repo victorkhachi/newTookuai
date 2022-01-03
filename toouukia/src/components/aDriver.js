@@ -4,6 +4,7 @@ import CarT from "./route-pages/CarT";
 function ADriver() {
     const [itemInput, setItemInput] = useState("");
     const [list, setList] = useState([]);
+     const [show, setShow] = useState(true);
 
     useEffect(() => {
       let mounted = true;
@@ -18,30 +19,36 @@ function ADriver() {
        e.preventDefault();
        setItem(itemInput);
        alert("SUCCESFUL")
-        
+        setShow(!show)
      };
   return (
-    <div className="formm shadow-lg">
-      <form onSubmit={handleSubmit} className="formm">
-        <label className="labell">Select Driver</label>
-        <select
-          className="inputt"
-          placeholder="Car Model"
-          type="text"
-          name="aDriver"
-          onChange={(event) => setItemInput(event.target.value)}
-          value={itemInput}
-        >
-          <option value="Emmanuel">Emmanuel</option>
-          <option value="Jacob">Jacob</option>
-          <option value="Maduka">Maduka</option>
-          <option value="Zaazu">ZAZUU</option>
-        </select>
-        <button className="btnnn" type="submit" value="Submit">
-          Assign Driver
-        </button>
-      </form>
-    </div>
+    <>
+      {show ? (
+        <div className="formm shadow-lg">
+          <form onSubmit={handleSubmit} className="formm">
+            <label className="labell">Select Driver</label>
+            <select
+              className="inputt"
+              placeholder="Car Model"
+              type="text"
+              name="aDriver"
+              onChange={(event) => setItemInput(event.target.value)}
+              value={itemInput}
+            >
+              <option value="Emmanuel">Emmanuel</option>
+              <option value="Jacob">Jacob</option>
+              <option value="Maduka">Maduka</option>
+              <option value="Zaazu">ZAZUU</option>
+            </select>
+            <button className="btnnn" type="submit" value="Submit">
+              Assign Driver
+            </button>
+          </form>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
   );
 }
 

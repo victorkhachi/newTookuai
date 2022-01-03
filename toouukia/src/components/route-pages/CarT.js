@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import Carform from '../Carform';
 import CarTable from '../CarTable';
 import ADriver from '../aDriver';
+import { withTranslation } from "react-i18next";
 import Noti1 from './Noti1';
-export default class CarT extends Component {
+
+ class CarT extends Component {
   constructor() {
     super();
 
@@ -16,8 +18,9 @@ export default class CarT extends Component {
       driver: "",
       items: [],
     };
+    
   }
-
+  
   handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -63,12 +66,12 @@ export default class CarT extends Component {
           </div>
           <div className="tIcon">
             <label className="addi" onClick={this.handleToggle}>
-              Add New Driver
+              {this.props.t("Ac")}
             </label>
             <label className="addi" onClick={this.handleToggl}>
-              Assign Driver
+              {this.props.t("Asd")}
             </label>
-            <label className="addi">Search</label>
+            <label className="addi">{this.props.t("Search")}</label>
           </div>
         </div>
         <CarTable items={this.state.items} />
@@ -80,11 +83,9 @@ export default class CarT extends Component {
             newmodel={this.state.model}
           />
         ) : null}
-        {this.state.isActive2 ? (
-          <ADriver/>
-        ) : null}
-        
+        {this.state.isActive2 ? <ADriver /> : null}
       </div>
     );
   }
 }
+export default withTranslation()(CarT)

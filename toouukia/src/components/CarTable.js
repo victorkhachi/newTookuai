@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-export default class CarTable extends Component {
+import { withTranslation } from "react-i18next";
+ class CarTable extends Component {
   render() {
       const items = this.props.items;
     return (
@@ -10,10 +10,10 @@ export default class CarTable extends Component {
             {" "}
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Car's Name</th>
-              <th scope="col"> Model</th>
-              <th scope="col"> Plate  Number</th>{" "}
-              <th scope="col">Driver</th>{" "}
+              <th scope="col">{this.props.t("Cn")}</th>
+              <th scope="col">{this.props.t("CModel")}</th>
+              <th scope="col"> {this.props.t("Cpn")}</th>{" "}
+              <th scope="col">{this.props.t("")}</th>{" "}
             </tr>{" "}
           </thead>
           <tbody>
@@ -31,6 +31,7 @@ export default class CarTable extends Component {
           </tbody>
         </table>
       </div>
-    )
+    );
   }
 }
+export default withTranslation()(CarTable)
