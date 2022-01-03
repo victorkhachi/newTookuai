@@ -88,4 +88,4 @@ import Noti1 from './Noti1';
     );
   }
 }
-export default withTranslation()(CarT)
+export  default withTranslation()(CarT)
