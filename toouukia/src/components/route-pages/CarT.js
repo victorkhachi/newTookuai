@@ -62,7 +62,7 @@ import Noti1 from './Noti1';
       <div>
         <div className="title">
           <div className="t-txt">
-            <p>Cars List</p>
+            <p>{this.props.t("Cl")}</p>
           </div>
           <div className="tIcon">
             <label className="addi" onClick={this.handleToggle}>

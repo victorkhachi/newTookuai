@@ -13,7 +13,7 @@ import { withTranslation } from "react-i18next";
               <th scope="col">{this.props.t("Cn")}</th>
               <th scope="col">{this.props.t("CModel")}</th>
               <th scope="col"> {this.props.t("Cpn")}</th>{" "}
-              <th scope="col">{this.props.t("")}</th>{" "}
+              <th scope="col">{this.props.t("D")}</th>{" "}
             </tr>{" "}
           </thead>
           <tbody>

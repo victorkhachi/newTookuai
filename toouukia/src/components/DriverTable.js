@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-export default class DriverTable extends Component {
+import { withTranslation } from 'react-i18next';
+ class DriverTable extends Component {
   render() {
     const items = this.props.items;
     return (
@@ -10,10 +10,10 @@ export default class DriverTable extends Component {
             {" "}
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Driver's Name</th>
-              <th scope="col">Age</th>
-              <th scope="col">Phone Number</th>{" "}
-              <th scope="col"> Car</th>{" "}
+              <th scope="col">{this.props.t("Dn")}</th>
+              <th scope="col">{this.props.t("Da")}</th>
+              <th scope="col">{this.props.t("Dp")}</th>{" "}
+              <th scope="col">{this.props.t("car")}</th>{" "}
             </tr>{" "}
           </thead>
           <tbody>
@@ -34,7 +34,7 @@ export default class DriverTable extends Component {
     );
   }
 }
-
+export default withTranslation()(DriverTable)
 
 
 // import React from 'react'

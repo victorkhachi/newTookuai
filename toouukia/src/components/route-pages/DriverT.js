@@ -3,8 +3,8 @@ import DriverForm from '../DriverForm';
 import DriverTable from '../DriverTable';
 import ADriver from '../aDriver';
 import Noti1 from './Noti1';
-import { useTranslation } from 'react-i18next';
-export default class DriverT extends Component {
+import { withTranslation } from 'react-i18next';
+ class DriverT extends Component {
   constructor() {
     super();
 
@@ -60,13 +60,15 @@ export default class DriverT extends Component {
       <div>
         <div className="title">
           <div className="t-txt">
-            <p>Drivers List</p>
+            <p>{this.props.t("Dl")}</p>
           </div>
           <div className="tIcon">
             <label className="addi" onClick={this.handleToggle}>
-              Add New Driver
+              {this.props.t("Ad")}
             </label>
-            <label className="addi">Search</label>
+            <label className="addi">
+              {this.props.t("Dl")}
+            </label>
           </div>
         </div>
         <DriverTable items={this.state.items} />
@@ -91,3 +93,4 @@ export default class DriverT extends Component {
     );
   }
 }
+export default withTranslation()(DriverT)
