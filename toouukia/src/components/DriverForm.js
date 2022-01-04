@@ -1,55 +1,55 @@
 import React, { Component } from 'react'
-
-export default class DriverForm extends Component {
+import { withTranslation } from 'react-i18next';
+ class DriverForm extends Component {
   render() {
     return (
       <div className="formm shadow-lg">
         <form onSubmit={this.props.handleFormSubmit} className="Formm">
-          <label className="labell">Enter Driver Name</label>
+          <label className="labell">{this.props.t("fDriverN")}</label>
           <input
             className="inputt"
-            placeholder="Driver Name"
+            placeholder={this.props.t("fDriverN")}
             value={this.props.newUsername}
             type="text"
             name="username"
             onChange={this.props.handleInputChange}
           />
-          <label className="labell">Enter Driver's Car</label>
+          <label className="labell">{this.props.t("fDriverDn")}</label>
           <input
             className="inputt"
-            placeholder="Driver's Car"
+            placeholder={this.props.t("car")}
             value={this.props.newCar}
             type="text"
             name="car"
             onChange={this.props.handleInputChange}
           />
-          <label className="labell">Enter Driver's ID</label>
+          <label className="labell">{this.props.t("Da")}</label>
           <input
             className="inputt"
             value={this.props.newPassword}
             type="number"
             name="password"
             onChange={this.props.handleInputChange}
-            placeholder="Driver's ID"
+            placeholder={this.props.t("Da")}
           />
-          <label className="labell">Phone Number</label>
+          <label className="labell">{this.props.t("fDriverP")}</label>
           <input
             className="inputt"
             value={this.props.newAdriver}
             type="number"
             name="aDriver"
             onChange={this.props.handleInputChange}
-            placeholder="Driver's Phone No"
+            placeholder={this.props.t("Dp")}
           />
           <button className="btnnn" type="submit" value="Submit">
-            Add Driver
+            {this.props.t("fDriverBtn")}
           </button>
         </form>
       </div>
     );
   }
 }
-
+export default withTranslation()(DriverForm)
 
 
 

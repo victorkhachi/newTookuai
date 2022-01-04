@@ -44,5 +44,17 @@
           "lN": "Last Name",
           "APh": "Phone Number",
           "Dstats":"Graph Overview",
-          "Tcc": "Total user cancelled requests"
+          "Tcc": "Total user cancelled requests",
+          "fCarN": "Enter Car Name",
+          "fCarM": "Enter Car's Model",
+          "fCarP": "Enter Car Plate No",
+          "fCarDn": "Enter Driver Name",
+          "fCarBtn": "Add Car",
+          "fDriverN": "Enter Driver Name",
+          "fDriverM": "Enter Driver's Model",
+          "fDriverP": "Enter Driver Phone No",
+          "fDriverDn": "Enter Car Name",
+          "fDriverBtn": "Add Driver",
+          "fAsSel": "Select Driver",
+          "FAssD": "Assign Driver"
         }
