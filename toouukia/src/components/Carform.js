@@ -1,56 +1,55 @@
 import React, { Component } from 'react'
-
-export default class Carform extends Component {
+import { withTranslation } from 'react-i18next';
+ class Carform extends Component {
   render() {
     return (
       <div className="formm shadow-lg">
         <form onSubmit={this.props.handleFormSubmit} className="Formm">
-          <label className="labell">Enter Car Name</label>
+          <label className="labell">{this.props.t("fCarN")}</label>
           <input
             className="inputt"
-            placeholder="Car's Name"
+            placeholder={this.props.t("Cn")}
             value={this.props.newName}
             type="text"
             name="name"
             onChange={this.props.handleInputChange}
           />
-          <label className="labell">Enter Car's Model</label>
+          <label className="labell">{this.props.t("fCarM")}</label>
           <input
             className="inputt"
-            placeholder="Car Model"
+            placeholder={this.props.t("CModel")}
             value={this.props.newModel}
             type="text"
             name="model"
             onChange={this.props.handleInputChange}
-          >
-          </input>
-          <label className="labell">Enter Car's Platenum</label>
+          ></input>
+          <label className="labell">{this.props.t("fCarP")}</label>
           <input
             className="inputt"
             value={this.props.newPlateNum}
             type="text"
             name="plateNum"
             onChange={this.props.handleInputChange}
-            placeholder="Plate Number"
+            placeholder={this.props.t("Cpn")}
           />
-          <label className="labell">Enter Driver's Name</label>
+          <label className="labell">{this.props.t("fCarDn")}</label>
           <input
             className="inputt"
             value={this.props.newDriver}
             type="text"
             name="driver"
             onChange={this.props.handleInputChange}
-            placeholder="Driver"
+            placeholder={this.props.t("D")}
           />
           <button className="btnnn" type="submit" value="Submit">
-            Add Car
+            {this.props.t("fCarBtn")}
           </button>
         </form>
       </div>
     );
   }
 }
-
+export default withTranslation()(Carform)
 
 // import React, { useState, useEffect } from "react";
 
