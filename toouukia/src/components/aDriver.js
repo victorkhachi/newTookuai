@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { getList, setItem } from "../Services/List";
+import { useTranslation } from "react-i18next";
 import CarT from "./route-pages/CarT";
 function ADriver() {
     const [itemInput, setItemInput] = useState("");
     const [list, setList] = useState([]);
      const [show, setShow] = useState(true);
-
+const {t} = useTranslation()
     useEffect(() => {
       let mounted = true;
       getList().then((items) => {
@@ -26,7 +27,7 @@ function ADriver() {
       {show ? (
         <div className="formm shadow-lg">
           <form onSubmit={handleSubmit} className="formm">
-            <label className="labell">Select Driver</label>
+            <label className="labell">{t("fAsSel")}</label>
             <select
               className="inputt"
               placeholder="Car Model"
@@ -41,7 +42,7 @@ function ADriver() {
               <option value="Zaazu">ZAZUU</option>
             </select>
             <button className="btnnn" type="submit" value="Submit">
-              Assign Driver
+              {t("FAssD")}
             </button>
           </form>
         </div>
