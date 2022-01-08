@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body {
-  background: rgb(26, 32, 56);
+  background: black;
   color: rgb(26, 32, 56);;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* -----SIDENAC STYLING----- */
 .sNav {
-  background-color: rgb(34, 42, 69);
+  background-color: black;
   padding: 1.5rem 5rem;
   padding-left: 0.6rem;
   width: 100%;
@@ -38,6 +41,7 @@ body {
 } */
 h1 {
   font-size: 1.8rem;
+  color: white;
 }
 .h1 {
   font-size: 1.5rem;
@@ -223,6 +227,7 @@ i {
 .table {
   background-color: #f8f8fa;
   border-radius: 1rem;
+  cursor: pointer;
 }
 td,
 th {
@@ -308,7 +313,7 @@ p {
   text-align: center;
   justify-content: center;
   margin: 1rem;
-  background-color: rgb(19, 102, 170);
+  background-color: black;
   color: white;
 }
 form {
@@ -339,9 +344,24 @@ form {
   flex-direction: column;
   transition: 2s linear;
 }
+.forex{
+  left:12%;
+}
+.box{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(50, 54, 70);
+  color:white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.boxxx{
+font-size: .9rem !important;
+}
 .labell{
   margin: .3rem 0;
-  color: rgb(26, 32, 56) !important;
+  color: black !important;
 }
 .inputt::placeholder{
   padding: 0 .5rem !important;
@@ -349,10 +369,10 @@ form {
 .inputt:focus{
   padding:0 1rem !important;
   font-size: 1rem !important;
-  outline: rgb(34, 42, 69);
+  outline: black;
 }
 .btnnn{
-  background-color: rgb(26, 32, 56);
+  background-color: black;
   color: white;
   border-radius: .6rem;
   margin: .8rem 0 ;
@@ -362,6 +382,6 @@ form {
   margin: 1rem;
   border: 1.6px solid rgb(165, 3, 3);
   border-radius: 5px;
-  color:rgb(26, 32, 56);
+  color:black;
   padding: 1rem;
 }

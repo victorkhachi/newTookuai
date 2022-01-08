@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import useForm from '../../useForm';
 import validate from '../../validateInfo';
+      
 const Sign = () => {
   const {handleChnage, values, handleSubmit, errors} = useForm(validate)
   return (

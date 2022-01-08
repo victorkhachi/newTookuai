@@ -68,9 +68,9 @@ import Noti1 from './Noti1';
             <label className="addi" onClick={this.handleToggle}>
               {this.props.t("Ac")}
             </label>
-            <label className="addi" onClick={this.handleToggl}>
+            {/* <label className="addi" onClick={this.handleToggl}>
               {this.props.t("Asd")}
-            </label>
+            </label> */}
             <label className="addi">{this.props.t("Search")}</label>
           </div>
         </div>

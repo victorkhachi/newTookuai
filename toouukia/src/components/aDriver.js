@@ -25,7 +25,7 @@ const {t} = useTranslation()
   return (
     <>
       {show ? (
-        <div className="formm shadow-lg">
+        <div className="formm forex shadow-lg">
           <form onSubmit={handleSubmit} className="formm">
             <label className="labell">{t("fAsSel")}</label>
             <select
