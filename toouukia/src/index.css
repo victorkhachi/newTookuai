@@ -6,15 +6,15 @@
   
 }
 body {
-  background: black;
+  background: #000000;
   color: rgb(26, 32, 56);;
   font-family: 'Montserrat', sans-serif !important;
 }
 
 /* -----SIDENAC STYLING----- */
 .sNav {
-  background-color: black;
-  padding: 1.5rem 5rem;
+  background-color: #000000;
+  padding: 1.5rem 2rem;
   padding-left: 0.6rem;
   width: 100%;
   position: sticky;
@@ -27,6 +27,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   transition: 3s linear;
+  margin: 0 !important;
 }
 .Snav{
   animation: slideFromTop 1s linear;
@@ -316,6 +317,9 @@ p {
   background-color: black;
   color: white;
 }
+.tn{
+  margin: 0 !important;
+}
 form {
   margin-left: 0.2rem;
   background-color: white;
@@ -384,4 +388,15 @@ font-size: .9rem !important;
   border-radius: 5px;
   color:black;
   padding: 1rem;
+}
+ .li:hover{
+  color: #ff0033;
+}
+
+/* Logo */
+.logoImg{
+  width: 10rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  height: 6rem;
 }

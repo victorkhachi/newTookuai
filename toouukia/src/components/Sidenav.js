@@ -6,14 +6,13 @@ const Sidenav = () => {
   return (
     <section className="Snav">
       <header
-        className="sNav collapse show collapse-horizontal"
-        id="collapseWidthExample"
-        id="style-1"
+        className="sNav"
       >
-        <h1>
-          {" "}
-          <i className="fas fa-mask h1"></i>Tookuai
-        </h1>
+          <img
+          className="logoImg"
+            src="https://www.tookuai.com/img/logo.jfif"
+            alt="BigCo Inc. logo"
+          />
         <hr></hr>
         <nav>
           <ul>
@@ -45,7 +44,7 @@ const Sidenav = () => {
           </ul>
           <p className="br">Pages</p>
 
-          <ul>
+          <ul className="ul2">
             <li>
               <NavLink to="/drivers" className="li">
                 <i className="fas fa-user-tie"></i> {t("driver")}

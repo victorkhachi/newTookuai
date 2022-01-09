@@ -49,7 +49,7 @@ const Dashboard = () => {
             <i class="fas fa-search"></i>
             <i class=" btn-group dropup">
               <button
-                class="btn dropdown-toggle"
+                class="btn tn dropdown-toggle"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
