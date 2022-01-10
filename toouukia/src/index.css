@@ -314,8 +314,8 @@ p {
   text-align: center;
   justify-content: center;
   margin: 1rem;
-  background-color: black;
-  color: white;
+  background-color: red;
+  color: black;
 }
 .tn{
   margin: 0 !important;
