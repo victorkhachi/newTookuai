@@ -376,8 +376,8 @@ font-size: .9rem !important;
   outline: black;
 }
 .btnnn{
-  background-color: black;
-  color: white;
+  background-color: red;
+  color: black;
   border-radius: .6rem;
   margin: .8rem 0 ;
 }
