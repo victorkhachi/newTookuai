@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/role-supports-aria-props */
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -8,11 +9,7 @@ const Sidenav = () => {
       <header
         className="sNav"
       >
-          <img
-          className="logoImg"
-            src="https://www.tookuai.com/img/logo.jfif"
-            alt="BigCo Inc. logo"
-          />
+
         <hr></hr>
         <nav>
           <ul>
