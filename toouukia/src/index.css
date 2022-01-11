@@ -15,7 +15,7 @@ body {
   background-color: #000000;
   padding: 1.5rem 0rem;
   padding-top:0;
-
+/* padding-bottom: 10rem; */
   width: 100%;
   position: sticky;
   top: 0;
@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  padding-bottom: 0.4rem;
+  padding-bottom: 1.7rem;
   overflow-x: hidden;
   overflow-y: auto;
   transition: 3s linear;
@@ -74,6 +74,9 @@ nav ul li,
   white-space: normal;
   font-size: 0.9rem;
   font-weight: 600;
+}
+.li:hover, nav ul li:hover{
+  color: #ff0033;
 }
 .dm {
   position: relative !important;
@@ -322,11 +325,29 @@ p {
 }
 
 .btn {
-  text-align: center;
+ text-align: center;
   justify-content: center;
   margin: 1rem;
   background-color: #ff0033;
   color: white;
+}
+.tn{
+  margin: 0 1rem;
+}
+
+/* ADD DRIVER/CAR/ADMIN FORM DESIGN*/
+.formm{
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom-right-radius: 3rem ;
+  border-top-left-radius: 3rem;
+  position: absolute;
+  /* z-index: 1; */
+  padding: 2rem;
+  top: 30%;
+  left: 40%;
+  transition: 2s linear;
 }
 .tn{
   margin: 0 !important;
@@ -366,17 +387,8 @@ form {
   position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: rgb(50, 54, 70);
-  color:white;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.boxxx{
-font-size: .9rem !important;
-}
-.labell{
-  margin: .3rem 0;
-  color: black !important;
+   background-color: #ff0033;
+  color: white !important;
 }
 .inputt::placeholder{
   padding: 0 .5rem !important;
@@ -389,34 +401,13 @@ font-size: .9rem !important;
 .btnnn{
   background-color: #ff0033;
   color: white;
-  border-radius: .6rem;
-  margin: .8rem 0 ;
-}
-/* ALERT-LI STYLING */
-.alertLi{
-  margin: 1rem;
-  border: 1.6px solid rgb(165, 3, 3);
-  border-radius: 5px;
-  color:black;
-  padding: 1rem;
-}
- .li:hover{
-  color: #ff0033;
-}
-
-/* Logo */
-.logoImg{
-  width: 10rem;
-  padding: 0;
-  /* border-radius: 1rem; */
-  height: 6rem;
-  padding-right: .8rem;
-  margin-right: -10px;
 }
 .logoIm{
-  height: 21rem;
-  width: 23rem;
+  width: 19rem;
+  height: 20rem;
 }
-.im{
-  height: 23rem;
+.logo{
+  height: 5rem;
+  width: 9rem;
+  margin-right: 10px;
 }
