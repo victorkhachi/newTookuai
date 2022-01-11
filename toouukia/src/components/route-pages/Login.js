@@ -5,19 +5,15 @@ import validateInfo from '../../validateInfoLogin';
 const Login = () => {
   const { handleChnage, values, handleSubmit, errors } = useFormLogin(validateInfo);
   return (
-    <div className="signCt shadow-lg">
+    <div className="signCt">
       {/* <h1>Create Account</h1> */}
       {/* <div className="signCtn"> */}
-      <div
-        className="signCtn1"
-        style={{
-          backgroundImage: `url("https://matx-react.ui-lib.com/assets/images/bg-3.png")`,
-        }}
-      >
-        <h2 style={{ marginTop: "2.9rem" }}>Toukia</h2>
-        <p>Admin Dashboard</p>
-        <p>Better Decision Making</p>
-        <p>Access To Data</p>
+      <div className="">
+        <img
+          className="logoIm im"
+          src="https://www.tookuai.com/img/logo.jfif"
+          alt="BigCo Inc. logo"
+        />
       </div>
       <form onSubmit={handleSubmit}>
         <div className="signCtn2">

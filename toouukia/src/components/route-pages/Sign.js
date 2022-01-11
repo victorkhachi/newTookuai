@@ -6,28 +6,21 @@ import validate from '../../validateInfo';
 const Sign = () => {
   const {handleChnage, values, handleSubmit, errors} = useForm(validate)
   return (
-    <div className="signCt shadow-lg">
+    <div className="signCt">
       {/* <h1>Create Account</h1> */}
       {/* <div className="signCtn"> */}
       <div
-        className="signCtn1"
-        style={{
-          backgroundImage: `url("https://matx-react.ui-lib.com/assets/images/bg-3.png")`,
-        }}
+        className=""
       >
-        <h2 style={{ marginTop: "2.9rem" }}>Toukia</h2>
-        <p>Admin Dashboard</p>
-        <p>Better Decision Making</p>
-        <p>Access To Data</p>
-        <p
-          style={{
-            fontSize:".7rem"
-          }}
-        >
-          Click On Login to continue
-        </p>
-      </div>
-      <form onSubmit={handleSubmit}>
+        <img
+          className="logoIm"
+          src="https://www.tookuai.com/img/logo.jfif"
+          alt="BigCo Inc. logo" />
+          <p>
+        Click On Login to continue
+      </p>
+    </div>
+    <form onSubmit={handleSubmit}>
         <div className="signCtn2">
           <h1 style={{ color: "black" }}>Create Account</h1>
           <p>
@@ -39,8 +32,7 @@ const Sign = () => {
             placeholder="Enter Your username"
             name="username"
             onChange={handleChnage}
-            value={values.username}
-          />
+            value={values.username} />
           {errors.username && (
             <p style={{ color: "black", fontSize: ".8rem", color: "red" }}>
               {errors.username}
@@ -56,8 +48,7 @@ const Sign = () => {
             type="Password"
             name="password"
             onChange={handleChnage}
-            value={values.password}
-          />
+            value={values.password} />
           {errors.password && (
             <p style={{ color: "black", fontSize: ".8rem", color: "red" }}>
               {errors.password}
@@ -71,11 +62,11 @@ const Sign = () => {
         </label>
         <p style={{ color: "black", fontSize: ".8rem", margin: ".8rem" }}>
           {" "}
-          Already have an account? <NavLink to="/login">login here</NavLink>
+          Already have an account?<NavLink to="/login">login here</NavLink>
         </p>
       </form>
     </div>
-    // </div>
+    
   );
 }
 
