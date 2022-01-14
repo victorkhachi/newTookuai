@@ -19,7 +19,13 @@ const useFormLogin = (validate) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
-    window.location="/Dash"
+     console.log(errors);
+     if (Object.keys(errors).length === 0) {
+       alert("Login Sucessful");
+       window.location = "/Dash";
+     } else {
+       alert("Seems You didn't apply the correct GEAR");
+     }
   };
   return { handleChnage, values, handleSubmit, errors };
 };

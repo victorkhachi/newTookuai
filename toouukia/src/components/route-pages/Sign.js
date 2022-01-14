@@ -1,26 +1,23 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
-import useForm from '../../useForm';
-import validate from '../../validateInfo';
-      
+import useForm from "../../useForm";
+import validate from "../../validateInfo";
+
 const Sign = () => {
-  const {handleChnage, values, handleSubmit, errors} = useForm(validate)
+  const { handleChnage, values, handleSubmit, errors } = useForm(validate);
   return (
     <div className="signCt">
       {/* <h1>Create Account</h1> */}
       {/* <div className="signCtn"> */}
-      <div
-        className=""
-      >
+      <div className="">
         <img
           className="logoIm"
           src="https://www.tookuai.com/img/logo.jfif"
-          alt="BigCo Inc. logo" />
-          <p>
-        Click On Login to continue
-      </p>
-    </div>
-    <form onSubmit={handleSubmit}>
+          alt="BigCo Inc. logo"
+        />
+        <p>Click On Login to continue</p>
+      </div>
+      <form onSubmit={handleSubmit}>
         <div className="signCtn2">
           <h1 style={{ color: "black" }}>Create Account</h1>
           <p>
@@ -32,7 +29,8 @@ const Sign = () => {
             placeholder="Enter Your username"
             name="username"
             onChange={handleChnage}
-            value={values.username} />
+            value={values.username}
+          />
           {errors.username && (
             <p style={{ color: "black", fontSize: ".8rem", color: "red" }}>
               {errors.username}
@@ -48,7 +46,8 @@ const Sign = () => {
             type="Password"
             name="password"
             onChange={handleChnage}
-            value={values.password} />
+            value={values.password}
+          />
           {errors.password && (
             <p style={{ color: "black", fontSize: ".8rem", color: "red" }}>
               {errors.password}
@@ -66,8 +65,7 @@ const Sign = () => {
         </p>
       </form>
     </div>
-    
   );
-}
+};
 
-export default Sign
+export default Sign;

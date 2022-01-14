@@ -1,5 +1,17 @@
 {
-  "list": [
-   
+  "list": [],
+  "signUp": [
+    {
+      "item": "boo",
+      "id": 1
+    },
+    {
+      "item": "goo",
+      "id": 2
+    },
+    {
+      "username": "boo",
+      "password": 3
+    }
   ]
 }
