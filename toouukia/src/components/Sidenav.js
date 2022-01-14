@@ -7,11 +7,9 @@ const Sidenav = () => {
   return (
     <section className="Snav">
       <header className="sNav">
-        <img
-          className="logo im"
-          src="https://www.tookuai.com/img/logo.jfif"
-          alt="BigCo Inc. logo"
-        />
+        <h1 className="logo">
+          T<span className="log">OO</span>KUAI
+        </h1>
         <hr></hr>
         <nav>
           <ul>
