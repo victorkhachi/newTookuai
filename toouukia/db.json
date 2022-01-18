@@ -1,5 +1,14 @@
 {
-  "list": [],
+  "list": [
+    {
+      "item": "Maduka",
+      "id": 1
+    },
+    {
+      "item": "Jacob",
+      "id": 2
+    }
+  ],
   "signUp": [
     {
       "item": "boo",

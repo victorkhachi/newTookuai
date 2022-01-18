@@ -7,6 +7,7 @@ import ADriver from './aDriver';
 
      this.state = {
        isActive2: false,
+       isActive3: false,
        isActive: false,
      };
    }
@@ -16,6 +17,9 @@ import ADriver from './aDriver';
    };
    handleToggle = () => {
      this.setState({ isActive: !this.state.isActive });
+   };
+   handleTogg = () => {
+     this.setState({ isActive3: !this.state.isActive3 });
    };
    render() {
      const items = this.props.items;
@@ -33,6 +37,16 @@ import ADriver from './aDriver';
              </tr>{" "}
            </thead>
            <tbody>
+             <tr>
+               <th scope="row">#</th>
+               <td onClick={this.handleTogg}>Toyota</td>
+               <td>2012</td>
+               <td>74-ZTU-ABJ</td>
+               {/* {items.map((item) => { */}
+                  <td>Maduka</td>;
+               {/* })} */}
+             </tr>
+
              {items.map((item) => {
                return (
                  <tr>
@@ -58,10 +72,25 @@ import ADriver from './aDriver';
                  </>
                );
              })}
-
              <button className="btnnn" onClick={this.handleToggl}>
                Assign Driver
              </button>
+           </div>
+         ) : null}
+         {this.state.isActive3 ? (
+           <div className="box">
+             <>
+               <p className="boxxx">Name: Toyota</p>
+               <p className="boxxx">Model: 2012</p>
+               <p className="boxxx">plateNum:74-ZTU-ABJ</p>
+               {/* {items.map((item) => { */}
+                  <p className="boxxx">Assigned Driver: Maduka</p>
+               {/* })} */}
+             </>
+
+             {/* <button className="btnnn" onClick={this.handleToggl}>
+               Assign Driver
+             </button> */}
            </div>
          ) : null}
          {/* <div className="box">
