@@ -1,0 +1,135 @@
+.drivers{
+    th,td{
+        font-size: 12px;
+        color: gray;
+        text-transform: capitalize;;
+
+    }
+
+    .selected_car{
+        background-color: white;
+        border-top: 1px solid gray;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+
+        .top{
+            display: block;
+            color: black;
+            width: fit-content;
+            height:fit-content
+        }
+        .driver_body{
+            width: 100%;
+            display: flex;
+            height: 92%;
+            flex-direction: column;
+        .left{
+            width: 100%;
+            border-bottom: 2px solid gray;
+            padding: 8px;
+            display: flex;
+            height: 50%;
+        }
+
+        .chart{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(13,13,13,0.5);
+            top:0;
+            left: 0;
+
+            .recharts-responsive-container{
+                margin: auto;
+                background-color: rgb(245, 241, 241);
+                height: 70%;
+                // margin-top: 32px;
+            }
+        }
+        .right{
+            width: 100%;
+            height: 50%;
+            
+            
+            .table{
+                max-height: 100%;
+                background-color: rgb(245, 241, 241);
+                width: 100%;
+                border-radius: 0;
+                margin-left: 16px;
+                margin-bottom: 20px;
+                
+
+                p{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                    text-transform: capitalize;
+                    margin: 16px;
+                }
+            }
+        }
+
+        .chart_title{
+            width: 100%;
+            // .top{
+            //     width: 100%;
+            //     text-align: center;
+            //     font-size: 18px;
+            //     color: red;
+            //     // margin-top: 24px;
+            // }
+            .titles{
+                width: 100%;
+                margin-top: 16px;
+
+                div{
+                    height: 60px;
+                    width: 97%;
+                    font-weight: bold;
+                    padding: 16px;
+                    font-size: 14px;
+                    box-shadow: 0 0 2px gray;
+                    margin: 8px;
+                    background-color: rgb(245, 241, 241);
+                }
+            }
+        }
+        .basic_info{
+            width: 100%;
+            background-color: rgb(245, 241, 241);
+            display: flex;
+
+            
+            .dp{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border: 1px solid gray;
+                margin: 16px;
+            }
+
+            ul{
+                list-style-type: none;
+                
+               li{
+                  display: flex;
+                  align-items: center;
+                span{
+                    font-size: 12px;
+                    margin-left: 16px;
+                    color: gray;
+                }
+            }
+            }
+        }
+        
+    }
+}
+}

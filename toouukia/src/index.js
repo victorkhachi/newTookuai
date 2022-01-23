@@ -9,7 +9,8 @@ import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 import "flag-icon-css/css/flag-icons.min.css"
-i18n
+
+// i18n
 
 ReactDOM.render(
   <React.StrictMode>

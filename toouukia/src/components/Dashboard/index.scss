@@ -1,0 +1,174 @@
+@mixin responsive ($size) {
+    @if $size == desktop {
+        @media only screen and (min-width:800px) {@content};
+    }
+    @if $size == Phones {
+        @media only screen and (max-width:799px){@content};
+    }
+}
+
+
+
+@include responsive(desktop){
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    // position: relative;
+    // top: 0;
+    .menu{
+        border-right: 2px solid gray;
+        height: 100%;
+        width: 25%;
+        // position: relative;
+        // top: 0;
+
+        .logo{
+            height: 60px;
+            width: 80px;
+            // position: fixed;
+            border-bottom: 0.5px solid grey;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .info{
+            
+            width: 100%;
+            color: red;
+            padding: 24px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+            border-bottom: 2px solid gray;
+
+
+            .name{
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            .avatar{
+                font-size: 40px;
+                width: 60px;
+                height: 60px;
+                border: 1px solid black;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+        .navs{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            a{
+              text-decoration: none;
+              color: black;
+              height: 92px;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+              justify-content: space-between;
+              padding: 24px;
+              border-bottom: 1px solid gray;
+            }
+        }
+        }
+    
+
+    .body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .dash-top{
+            width: 100%;
+            height: 12%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            color: red;
+            justify-content: space-between;
+            box-shadow: -2px 2px 1px gray;
+            padding: 16px 8px;
+            .info{
+                width: 25%;
+                color: red;
+                padding: 16px 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            
+                // border-bottom: 2px solid gray;
+    
+    
+                .name{
+                    font-weight: bolder;
+                    font-size: 18px;
+                }
+                .avatar{
+                    font-size: 40px;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                }
+    
+            }
+            div{
+                cursor: pointer;
+            }
+         
+            .profile{
+                width: fit-content;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+    
+                span{
+                    margin-bottom: 20px;
+                    margin-left: 12px;
+                }
+    
+            }
+            .language{
+                width: 15%;
+                height: 70%;
+                border-radius: 11px;
+                overflow: hidden;
+                margin-right: 32px;
+    
+                select{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    
+                    // color: white;
+                }
+            }
+        }
+
+        .content{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(245, 241, 241);
+            
+        }
+    }
+}
+}
