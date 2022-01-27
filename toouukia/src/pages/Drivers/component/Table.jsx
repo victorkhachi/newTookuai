@@ -1,7 +1,9 @@
+// import { useTranslation } from "i18next";
+import { useTranslation } from "react-i18next";
 import { Fragment } from "react/cjs/react.production.min";
 
 export default function Table({data}){
-
+   const {t}=useTranslation()
     return(
         <Fragment >
                  <p>{data.date}</p>
@@ -9,14 +11,14 @@ export default function Table({data}){
            <table>
            <thead>
                 <tr>
-                    <th>Rider</th>
-                    <th>from</th>
-                    <th>to</th>
-                    <th>cost</th>
-                    <th>rating</th>
+                    <th>{t('rider')}</th>
+                    <th>{t('from')}</th>
+                    <th>{t('to')}</th>
+                    <th>{t('cost')}</th>
+                    <th>{t('rating')}</th>
                     <th>POT</th>
                     <th>DOT</th>
-                    <th>with escort</th>
+                    <th>{t('escort')}</th>
                 </tr>
             </thead>
 

@@ -1,4 +1,4 @@
-import {ResponsiveContainer,BarChart,Bar,YAxis,XAxis} from 'recharts'
+import {ResponsiveContainer,BarChart,Bar,YAxis,XAxis, Tooltip} from 'recharts'
 
 export default function Barchart({data}){
     //  const data=[{
@@ -19,11 +19,12 @@ export default function Barchart({data}){
     //     fees:10
     // }]
     return (
-    <ResponsiveContainer  width='50%' aspect={1}>
-        <BarChart data={data}>
+    <ResponsiveContainer  width='100%' maxHeight='50%' aspect={1.5}>
+        <BarChart data={data} >
+                <Tooltip />
                  <XAxis dataKey='date'/>
                  <YAxis dataKey='data'/>
-                 <Bar dataKey='data' stroke='red'/>
+                 <Bar dataKey='data' fill='gray' />
         </BarChart>
     </ResponsiveContainer>
     )

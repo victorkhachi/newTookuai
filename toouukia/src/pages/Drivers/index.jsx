@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { FaPizzaSlice } from 'react-icons/fa'
 import MainDashboard from '../../components/Dashboard'
 import Component from './component'
@@ -141,19 +142,19 @@ bankInfo:{
     number:23456
 }
 }]
-
+const {t}=useTranslation()
     return(
         <MainDashboard>
             <div className="cars drivers">
-                <div className="top">drivers</div>
+                <div className="top">{t('driver')}</div>
                 <div className="table">
                     <table>
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>name</th>
-                                <th>tel</th>
-                                <th>onTrip</th>
+                                <th>{t('Dn')}</th>
+                                <th>{t('APh')}</th>
+                                <th>{t('Or')}</th>
                             </tr>
                         </thead>
                         {

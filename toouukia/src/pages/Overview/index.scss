@@ -1,0 +1,31 @@
+.over_view{
+    .charts{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 32px;
+
+        div{
+            width: 150px;
+            // height: 60px;
+            box-shadow: 0 0 2px gray;
+            font-size: 12px;
+            height:80px;
+            border-radius: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: red;
+            .number{
+                font-weight: bolder;
+                color: black;
+            }
+
+        }
+    }
+}

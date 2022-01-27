@@ -5,9 +5,11 @@ import MainDashboard from './components/Dashboard'
 import Cars from "./pages/cars/cars";
 import OverView from "./pages/Overview";
 import Drivers from "./pages/Drivers";
-
+import { useTranslation } from "react-i18next";
 
 function App() {
+   const {t}=useTranslation()
+  
   return (
     <>
       <Router>
@@ -16,15 +18,16 @@ function App() {
                <Registration />
             </Route>
           <Route path='/dashboard' >
-              <MainDashboard />
+              <OverView />
+              
           </Route>
-          <Route path='/cars' >
+          <Route path={`/${t('car')}`} >
               <Cars />
           </Route>
-          <Route path='/Overview' >
+          <Route path={`/${t('Ds')}`} >
               <OverView />
           </Route>
-          <Route path='/drivers' >
+          <Route path={`/${t('driver')}`} >
               <Drivers />
           </Route>
           </Switch>
