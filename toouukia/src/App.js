@@ -21,13 +21,13 @@ function App() {
               <OverView />
               
           </Route>
-          <Route path={`/${t('car')}`} >
+          <Route path='/cars' >
               <Cars />
           </Route>
-          <Route path={`/${t('Ds')}`} >
+          <Route path='/overview' >
               <OverView />
           </Route>
-          <Route path={`/${t('driver')}`} >
+          <Route path='/drivers' >
               <Drivers />
           </Route>
           </Switch>

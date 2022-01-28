@@ -8,17 +8,13 @@ import { FaTimes } from 'react-icons/fa'
 import { FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
-
+import i18next from 'i18next'
 
 export default function MainDashboard({children}){
-   const {t ,i18n}=useTranslation()
-    const boardReference=[{name:t('Ds'),icon:<FaTimes />},{name:t('car'),icon:<FaCar />,},{name:t('driver'),icon:<FaPeopleArrows />},{name:t('profile'),icon:<FaUser />}]
-     const [language,setLanguage]=useState('en')
-    // useEffect(()=>{
-    //     const Html=document.querySelector('html')
-    //     Html.lang=language
-    //     console.log(Html);
-    // },[language])
+      const {t }=useTranslation()
+      const boardReference=[{link:'overview',name:t('Ds'),icon:<FaTimes />},{link:'cars',name:t('car'),icon:<FaCar />,},{link:'drivers',name:t('driver'),icon:<FaPeopleArrows />},{link:'profile',name:t('profile'),icon:<FaUser />}]
+    
+   
 
    return(
       <div class='dashboard'>
@@ -38,7 +34,7 @@ export default function MainDashboard({children}){
                 <div className="navs">
                     {
                         boardReference.map(links=>(
-                            <Link to={`/${links.name}`}><span>{links.name}</span><span>{links.icon}</span></Link>
+                            <Link to={`/${links.link}`}><span>{links.name}</span><span>{links.icon}</span></Link>
                         ))
                     }
                 </div>
@@ -52,8 +48,8 @@ export default function MainDashboard({children}){
             
             </div>
             <div className="language">
-                <select onChange={(e)=>setLanguage(e.target.value)}>
-                    <option value='en'>English</option>
+                <select onChange={(e)=>i18next.changeLanguage(e.target.value)}>
+                    <option value='en' >English</option>
                     <option value='ar'>Arabic</option>
                 </select>
             </div>
